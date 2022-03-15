@@ -6,7 +6,7 @@ let tick = document.querySelectorAll("input[type=checkbox][name=Chooseme]");
 let output2 = document.getElementById('out2')
 let output3 = document.getElementById("out3");
 let output4 = document.getElementById("out4");
-let selection = document.querySelectorAll("input[for=Select][name=option]")
+let selection = document.querySelector("select[name='sel_opt']")
 
 
 radios.forEach( rad => {
@@ -25,8 +25,8 @@ radios.forEach( rad => {
     output2.innerHTML = e.target.value
       
   }
+  
+    selection.addEventListener("change",func4);
    function func4(e) {
-     let selection = document.getElementById("select").selectedIndex;
-     output4.innerHTML = document.getElementsByTagName("option")[select].value;
+     output4.innerHTML = e.target.value
    }
-    selection.addEventListener("click",func4);
