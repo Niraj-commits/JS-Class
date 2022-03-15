@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <h1>This is the heading</h1>
+  <body>
+    <table>
+      <tr>
+        <td>
+          <label>Full Name:</label>
+          <input type="text" id="fullname" placeholder="Your Name" />
+        </td>
+        <td><output id="out1"></output></td>
+      </tr>
+      <tr>
+        <td>
+          <label>Choose Me</label>
+          <input type="checkbox" id="check" name="Chooseme" value="true" />
+          <input type="checkbox" id="check" name="Chooseme" value="false" />
+        </td>
+        <td><output id="out2"></output></td>
+      </tr>
+      <tr>
+        <td>
+          <label for="gender">Gender</label>
+          <input type="radio" id="rad" name="gender" value="male" />Male
+          <input type="radio" id="rad" name="gender" value="female" />Female
+        </td>
+        <td><output id="out3"></output></td>
+    </tr>
+    <tr>
+        <td>
+            <label for="Select">SelectOne</label>
+            <select name="option" id="select">
+                <option value="sel2" name="option">selectOne</option>
+                <option value="sel2"  name="option">selectTwo</option>
+                <option value="sel3"  name="option">selectThree</option>
+            </select>
+        </td>
+        <td><output id="out4"></output></td>
+      </tr>
+      <tr>
+        <td>
+          <input type="submit" value="submit" />
+        </td>
+      </tr>
+    </table>
+    <script src="resultside.js"></script>
+  </body>
+</html>
